@@ -1,0 +1,106 @@
+
+.master{
+    height: 550px;
+    margin-left: 250px;
+    font-size: large;
+}
+
+.header{
+    color: blue;
+    margin-left: 230px;
+}
+.secondheader{
+    color: rgba(14, 19, 19, 0.836);
+    margin-left: 230px;
+}
+.body{
+    border: 2px solid rgba(17, 17, 17, 0.836);
+    border-collapse: collapse;
+    margin-left: 50px;
+}
+table,th,td,tr{
+    border: 1px solid rgba(19, 17, 17, 0.856);
+    border-collapse: collapse;
+
+}
+#body1{
+    border: 2px solid black;
+}
+#footer{
+    border: 2px solid rgba(7, 7, 7, 0.836);
+}
+#body2{
+    border: 2px solid black;
+}
+#body3{
+    border: 2px solid black;
+}
+#head1{
+    border: 2px solid black;
+    background-color: springgreen;
+}
+.head2{
+    border: 1px solid black;
+    background-color: aqua;
+    border-collapse:collapse;
+    height: 10px;
+    width: 350px;
+    padding-left: 120px;
+    
+}
+.secondbody{
+    border: 2px solid black;
+}
+.hii{
+    background-color: rgb(148, 148, 197);
+}
+.hii1{
+    background-color: burlywood;
+}
+.sr{
+    background-color: antiquewhite;
+}
+.sr1{
+    background-color: aqua;
+}
+.sr2{
+    background-color: blueviolet;
+}
+.sr3{
+    background-color: burlywood;
+
+}
+.sr4{
+    background-color: cadetblue;
+}
+.sr5{
+    background-color: coral;
+}
+.tech{
+    background-color: darkgreen;
+    color: rgb(245, 10, 10);
+}
+.footer1{
+    background-color: blue;
+    color: aliceblue;
+}
+.footer2{
+    background-color: rgb(166, 166, 236);
+    color: rgb(16, 245, 47);
+}
+.footer3{
+    background-color:yellowgreen;
+    color: rgb(197, 15, 15);
+}
+.footer4{
+    background-color: rgb(41, 37, 37);
+    color: rgb(22, 134, 233);
+}
+.footer5{
+    background-color: rgb(206, 206, 221);
+    color: rgb(19, 112, 194);
+}
+.footer6{
+    background-color:brown;
+    color:hotpink;
+}
