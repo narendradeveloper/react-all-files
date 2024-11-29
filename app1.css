@@ -1,0 +1,26 @@
+.app{
+    background-color: aquamarine;
+    text-align: center;
+    width: 140vh;
+    margin-left: 40vh;
+    height: 30vh;
+    /* border-top: 40vh; */
+}
+.app-dome{
+    background-color: antiquewhite;
+    min-height: 100vh;
+    
+    color: white;
+}
+button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: chartreuse;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 19px;
+}
+button:hover{
+    background-color: cornflowerblue;
+}
