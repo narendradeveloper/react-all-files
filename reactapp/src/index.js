@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Sample from './Sample';
-// import Demo from './app1';      
+// import Sample from './Sample';
+import Demo from './app1';      
 // import Home from './day2/home';
 // import Parent from './day3/parent';
 // import Card from './day4/card';
@@ -15,12 +15,12 @@ const root=ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    {/* <Demo/> */}
+    <Demo/>
     {/* <Fun/> */}
     {/* <Card/> */}
     {/* <Parent admin={true}/> */}
     {/* <Home/> */}
-    <Sample/>
+    {/* <Sample/> */}
   </React.StrictMode>
 )
 
