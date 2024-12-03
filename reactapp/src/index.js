@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Sample from './Sample';
+// import Sample from './Sample';
+import Home from './day8/home';
 // import Demo from './app1';      
 // import Todo from './day6/todo';
 // import Home from './day2/home';
@@ -18,13 +19,14 @@ root.render(
   <React.StrictMode>
     {/* { <App /> } */}
     {/* <Todo/> */}
+    <Home/>
     {/* <Demo/> */}
     {/* <Spin/> */}
     {/* <Fun/> */}
     {/* <Card/> */}
     {/* <Parent admin={true}/> */}
     {/* <Home/> */}
-    <Sample/>
+    {/* <Sample/> */}
   </React.StrictMode>
 )
 
