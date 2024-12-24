@@ -6,7 +6,7 @@ class Card extends Component{
     render(){
         return(
             <>
-            <Card1/>
+            <Card1 name="narendra" city="hyderab" gender="male"/>
             
             </>
         )

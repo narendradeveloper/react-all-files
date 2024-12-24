@@ -1,9 +1,9 @@
 import React from "react";
-
+// import "./home.css"
 function Footer(){
     return(
-        <div>
-            <ul>
+        <div className="div">
+            <ul >
                 <li>Home</li>
                 <li>contactus</li>
                 <li>price</li>

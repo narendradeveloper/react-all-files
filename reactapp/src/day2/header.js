@@ -4,7 +4,7 @@ class About extends Component{
     render(){
         return(
             <>
-            <h1>footter page</h1>
+            {/* <h1>footter page</h1> */}
             </>
         )
     }
