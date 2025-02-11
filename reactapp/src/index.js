@@ -14,6 +14,8 @@ import reportWebVitals from './reportWebVitals';
 // import Spin from './day7/spin';
 // import Firsthome from './firsthome';
 import RandomCircles from './random1';
+// import Project from './projectTask/Home1';
+// import Bpp from './dummi';
 // import Random from './random';
 // import ChildCopm1 from './contextapi/childcomp1';
 
@@ -22,6 +24,8 @@ const root=ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* { <App /> }  */}
+    {/* <Project/> */}
+{/* <Bpp/> */}
     {/* <Todo/> */}
     <RandomCircles/>
     {/* <Random/> */}

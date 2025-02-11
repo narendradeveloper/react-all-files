@@ -4,23 +4,44 @@ const RandomCircles = () => {
   const [clickCount, setClickCount] = useState(0);
   const [circles, setCircles] = useState([]);
 
-  const generateRandomPosition = (size) => {
-    const x = Math.floor(Math.random() * 90) + 2; 
-    const y = Math.floor(Math.random() * 90) + 5; 
-    const color = `#${Math.floor(Math.random() * 10000)}`; 
+  const color =["#e05510","##cce911","#11e933","#1120e9","#14e10f"]
+
+  const getcolor =()=>{
+    const random=Math.floor(Math.random()*color.length);
+    return color[random]
+  }
+
+  const generateRandomPosition = (size, x, y,  ) => {
+    const color = getcolor() 
     return { x, y, color, size };
   };
 
-  const handleClick = () => {
+  const handleClick = (e) => {
     setClickCount((prev) => prev + 1);
+    if (clickCount <2) {
 
-    if (clickCount === 0) {
-      setCircles([generateRandomPosition(10)]);
-    } else if (clickCount === 1) {
-      setCircles([generateRandomPosition(10), generateRandomPosition(30)]);
-    } else if (clickCount === 2) {
-      setCircles([]);
-      setClickCount(0); 
+      const mouseX =e.clientX 
+      const mouseY=e.clientY 
+
+      const container =window.innerWidth
+      const container1 =window.innerHeight
+
+      const xparcent =(mouseX /container *100)
+      const yparcent =(mouseY /container1 *100)
+      
+      const circleSize = Math.floor(Math.random() * (30));
+
+     
+      const newCircle = generateRandomPosition(circleSize,xparcent,yparcent );
+
+      
+      setCircles((prevCircles) => [...prevCircles, newCircle]);
+    }
+
+    if (clickCount === 2) {
+     
+      setClickCount(0);
+      setCircles([]); 
     }
   };
 
@@ -31,22 +52,27 @@ const RandomCircles = () => {
         height: "100vh",
         background: "#f0f0f0",
         overflow: "hidden",
-        textAlign:"center",
+       
+        cursor:"pointer",
       }}
-      onClick={handleClick}
-    >
+      onClick={handleClick}>
       {circles.map((circle, index) => (
         <div
           key={index}
           style={{
+            position: "absolute",
             top: `${circle.y}%`,
             left: `${circle.x}%`,
             width: `${circle.size}vh`,
             height: `${circle.size}vh`,
+            textAlign: `${circle.center}`,
+            justifyContent:`${circle.center}`,
+            alignContent:`${circle.center}`,
+
             backgroundColor: circle.color,
             borderRadius: "50%",
-           
           }}
+         
         ></div>
       ))}
     </div>
